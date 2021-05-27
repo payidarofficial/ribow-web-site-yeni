@@ -1,0 +1,255 @@
+@import url(font.css);
+
+/* Color */
+:root{
+    --arkaplan: #ffffff;
+    --ribow-renk: #ee6e73;
+    --black: #000000;
+    --saydam_background: rgba(0, 0, 0, .5);
+}
+
+/* Setting */
+body{
+    margin: 0;
+    background-color: var(--arkaplan);
+}
+::selection{
+    background: var(--black);
+    color: white;
+}
+*{
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+/* Menu Bar */
+.menu-bar{
+    padding: 10px;
+    background-color: var(--ribow-renk);
+    overflow: hidden;
+    transition: 250ms all;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.menu-bar > h1{
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
+    color: white;
+    float: left;
+}
+.menu-bar > a{
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
+    color: white;
+    float: left;
+    text-decoration: none;
+    position: relative;
+    top: 26px;
+    padding: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    outline: none !important;
+    float: right;
+    transition: 250ms all;
+}
+.menu-bar > a:hover{
+    background: black;
+    color: white;
+    /* animation: ribow_rainbow 1.1s infinite; */
+}
+.menu-bar > a:focus{
+    box-shadow: 0px 0px 0px 2px white;
+}
+
+/* Banner */
+.banner{
+    padding: 10px;
+    background-color: var(--ribow-renk)
+}
+.banner > .banner-text > .banner-fr{
+    background-image: linear-gradient(45deg, blue, red);
+    border-radius: 30% 70% 70% 30% / 29% 30% 70% 71%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+.banner > .banner-text{
+    text-align: center
+}
+.banner > .banner-text h1{
+    font-family: 'Righteous', cursive;
+    font-weight: bolder;
+    color: white;
+    position: relative;
+    top: 75px;
+    left: -55px;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+.banner > .banner-text p{
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
+    color: white;
+    position: relative;
+    top: 20px;
+}
+
+/* Group Flex Box */
+.group{
+    margin: 0;
+    border: none;
+    outline: none;
+}
+.group > .flex-box{
+    display: flex;
+    justify-content: center;
+}
+.group > .flex-box > div{
+    width: 400px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 0px 0px 1px #eee;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+    transition: 250ms all;
+}
+.group > .flex-box > div h1{
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
+    color: black;
+}
+.group > .flex-box > div hr{
+    background: #eee;
+    padding: initial;
+    margin: initial;
+    border: none;
+    height: .5;
+}
+.group > .flex-box > div p{
+    font-family: 'Cairo', sans-serif;
+    font-weight: lighter;
+    color: gray;
+    line-height: 1.2;
+}
+.group > .flex-box > div:hover{
+    transform: translateY(-7px);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .1)
+}
+
+.title > h1{
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    font-size: 70px;
+    line-height: .9;
+    margin-bottom: 70px;
+}
+
+/* Command */
+.command{
+    padding: 5px;
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+.command > .command-flex{
+    display: flex;
+    flex-direction: column;
+}
+.command > .command-flex > div{
+    padding: 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(20deg, #ff585f, orange);
+    margin-bottom: 100px;
+    transition: 250ms all
+}
+.command > .command-flex > div:hover img{
+    transform: scale(1.2);
+}
+.command > .command-flex > div img{
+    width: 200px;
+    border-radius: 10px;
+    margin-top: -50px;
+    transition: 250ms all
+}
+.command .command-description{
+    float: right;
+    text-align: right;
+    margin-top: -180px;
+}
+.command > .command-flex > div h1{
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+}
+.command > .command-flex > div p{
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+}
+
+/* Footer */
+.footer{
+    padding: 10px;
+    overflow: hidden;
+    background-color: var(--ribow-renk);
+}
+.footer .ribow-title > h1{
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    margin-top: -15px;
+}
+.footer > .footer-flex{
+    display: flex;
+    justify-content: space-around;
+}
+.footer > .footer-flex > div{
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.footer > .footer-flex > div > h1{
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+}
+.footer > .footer-flex > div > a{
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+}
+.footer > .copyright-title > p{
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
+    color: black;
+    text-align: center;
+}
+
+/* Animations */
+/* @keyframes ribow_rainbow{
+    0%, 100%{
+        background-color: lime;
+    }
+    50%{
+        background-color: red;
+    }
+} */
